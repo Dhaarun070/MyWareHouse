@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wtp5.css">
+    <title>Electricity Consumption Calculator</title>
+</head>
+<body>
+    <h1>Electricity Consumption Calculator</h1>
+    <div>
+        <label for="cost">Cost per kWh (RS):</label>
+        <input type="number" id="cost" placeholder="Enter cost per kWh" required>
+    </div>
+
+    <div id="appliance-list">
+        <div class="appliance">
+            <input type="number" class="wattage" placeholder="Wattage (W)" required>
+            <input type="number" class="hours" placeholder="Hours used per day" required>
+            <button class="remove-appliance" style="display: none;">Remove</button>
+        </div>
+    </div>
+    <button id="add-appliance">Add Appliance</button>
+    <button id="calculate">Calculate</button>
+
+    <div id="result">
+        <div class="result-row">
+            <span id="daily-consumption"></span>
+            <span id="daily-cost"></span>
+        </div>
+        <div class="result-row">
+            <span id="monthly-consumption"></span>
+            <span id="monthly-cost"></span>
+        </div>
+        <div class="result-row">
+            <span id="yearly-consumption"></span>
+            <span id="yearly-cost"></span>
+        </div>
+    </div>
+    
+
+    <script src="wtp5.js"></script>
+</body>
+</html>

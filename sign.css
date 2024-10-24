@@ -1,0 +1,77 @@
+body {
+    background-image: url('1920x1080-276884-power-plant-substation-electrical-and-public-power.jpg');
+    font-family: 'Poppins', Arial, sans-serif; /* More modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.container {
+    max-width: 600px; /* Increased width */
+    padding: 40px; /* Increased padding for more space */
+    background: white;
+    border-radius: 15px; /* More rounded corners for a modern look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for style */
+    text-align: center; /* Center text inside the container */
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px; /* Slightly larger heading */
+    color: #333; /* Darker heading color */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    align-self: flex-start; /* Align labels to the left */
+}
+
+input {
+    width: 100%; /* Full width input fields */
+    margin-bottom: 20px;
+    padding: 15px; /* Larger input fields */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Larger input text */
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #6caae4; /* Highlight input on focus */
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    width: 100%;
+    background: linear-gradient(135deg, #6caae4, #4cae4c); /* Gradient background for the button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 30px;
+    }
+}
